@@ -1,0 +1,11 @@
+com\mycompany\flightbookingsystem\servlets\LoginServlet.class
+com\mycompany\flightbookingsystem\servlets\SearchFlightsServlet.class
+com\mycompany\flightbookingsystem\servlets\BookFlightServlet.class
+com\mycompany\flightbookingsystem\servlets\SignupServlet.class
+com\mycompany\flightbookingsystem\JakartaRestConfiguration.class
+com\mycompany\flightbookingsystem\db\DBConnection.class
+com\mycompany\flightbookingsystem\servlets\AllBookingsServlet.class
+some.class
+com\mycompany\flightbookingsystem\resources\JakartaEE8Resource.class
+com\mycompany\flightbookingsystem\servlets\ConfirmationServlet.class
+Internal.class

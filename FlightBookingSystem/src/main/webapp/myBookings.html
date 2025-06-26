@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Bookings</title>
+</head>
+<body>
+    <h2>My Bookings</h2>
+    <table border="1">
+        <tr>
+            <th>Flight Name</th>
+            <th>Source</th>
+            <th>Destination</th>
+            <th>Price</th>
+            <th>Booking Date</th>
+        </tr>
+        <script>
+            fetch('MyBookingsServlet')
+                .then(response => response.json())
+                .then(data => {
+                    data.forEach(booking => {
+                        document.write("<tr>");
+                        document.write("<td>" + booking.flight_name + "</td>");
+                        document.write("<td>" + booking.source + "</td>");
+                        document.write("<td>" + booking.destination + "</td>");
+                        document.write("<td>" + booking.price + "</td>");
+                        document.write("<td>" + booking.booking_date + "</td>");
+                        document.write("</tr>");
+                    });
+                });
+        </script>
+    </table>
+    <br>
+    <a href="searchFlights.html">Book Another Flight</a>
+</body>
+</html>
